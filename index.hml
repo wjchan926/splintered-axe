@@ -51,7 +51,7 @@
   <p>Upload your files and send project details below.</p>
 
   <!-- FORM SPREE FORM -->
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+  <form action="https://formspree.io/f/xzdagnkp" method="POST" enctype="multipart/form-data">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Email Address" required>
     <textarea name="message" placeholder="Describe your project" required></textarea>
