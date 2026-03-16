@@ -11,6 +11,20 @@ body {
   line-height: 1.6;
 }
 
+.social a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social a:hover {
+  color: #588157;
+}
+
 /* HEADER */
 
 header {
@@ -19,13 +33,20 @@ header {
   padding: 20px 40px;
   border-bottom: 2px solid #3A5A40;
 }
+/* Header nav layout */
+nav {
+  display: flex;
+  justify-content: space-between; /* left vs right blocks */
+  align-items: center;
+  padding: 10px 40px;
+}
 
-/* Logo container as flex but still a link */
+/* Logo + Title */
 .logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
-  text-decoration: none; /* remove underline */
+  text-decoration: none;
 }
 
 .logo-avatar {
@@ -37,19 +58,50 @@ header {
   transition: transform 0.2s ease;
 }
 
-/* Optional hover effect */
 .logo-avatar:hover {
   transform: scale(1.1);
 }
 
-/* Title text inside link */
 .logo-container h1 {
   font-size: 40px;
   color: #EAEAEA;
   margin: 0;
 }
 
-/* Mobile adjustments */
+/* Nav + social on the right */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* space between nav links and social */
+}
+
+/* Nav links */
+.nav-links a {
+  color: #EAEAEA;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #588157; /* moss accent */
+}
+
+/* Social */
+.social a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social a:hover {
+  color: #588157;
+}
+
+/* Responsive */
 @media (max-width:700px){
   .logo-avatar {
     width: 40px;
@@ -58,24 +110,17 @@ header {
   .logo-container h1 {
     font-size: 20px;
   }
+  .nav-links a {
+    font-size: 14px;
+    margin-left: 12px;
+  }
+  .social a {
+    font-size: 12px;
+  }
+  nav {
+    padding: 10px 20px;
+  }
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links a {
-  color: #EAEAEA;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  color: #588157;
-}
-
 /* HERO */
 
 .hero {
@@ -234,4 +279,32 @@ footer {
   text-align: center;
   padding: 20px;
   border-top: 2px solid #3A5A40;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 5px;
+  transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: #588157; /* moss accent */
+}
+
+@media (max-width:700px){
+  .footer-social a {
+    font-size: 12px;
+  }
 }
