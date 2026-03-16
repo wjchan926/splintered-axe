@@ -7,16 +7,17 @@
 
 body {
   color: #1A1A1A;
-  background: #F1FAF4;
+  background: #F6F3EE;
   line-height: 1.6;
 }
 
 /* HEADER */
 
 header {
-  background: #1B4332;
+  background: #121212;
   color: white;
   padding: 20px 40px;
+  border-bottom: 2px solid #3A5A40;
 }
 
 nav {
@@ -26,13 +27,13 @@ nav {
 }
 
 .nav-links a {
-  color: #E9F5EC;
+  color: #EAEAEA;
   margin-left: 20px;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #74C69D;
+  color: #588157;
 }
 
 /* HERO */
@@ -40,8 +41,8 @@ nav {
 .hero {
   background: linear-gradient(
     135deg,
-    #1B4332,
-    #2D6A4F
+    #121212,
+    #1F2A24
   );
   color: white;
   padding: 120px 20px;
@@ -51,16 +52,16 @@ nav {
 .button {
   display: inline-block;
   margin-top: 20px;
-  background: #40916C;
+  background: #6B4F3B;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 26px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: 0.2s;
 }
 
 .button:hover {
-  background: #2D6A4F;
+  background: #3A5A40;
 }
 
 /* SECTIONS */
@@ -71,7 +72,7 @@ nav {
 }
 
 .dark {
-  background: #E6F2EA;
+  background: #ECE7E1;
 }
 
 /* SERVICE CARDS */
@@ -87,10 +88,10 @@ nav {
 .card {
   background: white;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 10px;
   width: 260px;
-  border: 1px solid #D8E9DD;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  border: 1px solid #E3DED7;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 /* GALLERY */
@@ -104,7 +105,7 @@ nav {
 
 .gallery img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /* FORM */
@@ -119,29 +120,30 @@ form {
 
 input, textarea {
   padding: 12px;
-  border: 1px solid #CFE3D7;
+  border: 1px solid #D8D3CB;
   border-radius: 6px;
 }
 
 button {
-  background: #2D6A4F;
+  background: #3A5A40;
   color: white;
   padding: 14px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1B4332;
+  background: #1F2A24;
 }
 
 /* FOOTER */
 
 footer {
-  background: #1B4332;
-  color: #EAF6EE;
+  background: #121212;
+  color: #EAEAEA;
   text-align: center;
   padding: 20px;
+  border-top: 2px solid #3A5A40;
 }
