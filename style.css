@@ -299,6 +299,17 @@ footer {
   transition: color 0.2s ease;
 }
 
+.legal{
+max-width:800px;
+margin:auto;
+line-height:1.7;
+}
+
+.legal h3{
+margin-top:30px;
+}
+
+
 .footer-social a:hover {
   color: #588157; /* moss accent */
 }
