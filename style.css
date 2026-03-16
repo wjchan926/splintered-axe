@@ -138,6 +138,14 @@ button:hover {
   background: #1F2A24;
 }
 
+select {
+  padding: 12px;
+  border: 1px solid #D8D3CB;
+  border-radius: 6px;
+  font-size: 16px;
+  background: white;
+}
+
 /* FOOTER */
 
 footer {
