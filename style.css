@@ -20,6 +20,46 @@ header {
   border-bottom: 2px solid #3A5A40;
 }
 
+/* Logo container as flex but still a link */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none; /* remove underline */
+}
+
+.logo-avatar {
+  width: 100px; /* logo size */
+  height: 100px; /* logo size */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #EAEAEA;
+  transition: transform 0.2s ease;
+}
+
+/* Optional hover effect */
+.logo-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Title text inside link */
+.logo-container h1 {
+  font-size: 40px;
+  color: #EAEAEA;
+  margin: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width:700px){
+  .logo-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-container h1 {
+    font-size: 20px;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
