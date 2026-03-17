@@ -6,13 +6,13 @@
 }
 
 body {
-  color: #1A1A1A;
-  background: #F6F3EE;
+  color: #1a1a1a;
+  background: #f6f3ee;
   line-height: 1.6;
 }
 
 .social a {
-  color: #EAEAEA;
+  color: #eaeaea;
   text-decoration: none;
   font-size: 14px;
   margin-left: 20px;
@@ -31,7 +31,7 @@ header {
   background: #121212;
   color: white;
   padding: 20px 40px;
-  border-bottom: 2px solid #3A5A40;
+  border-bottom: 2px solid #3a5a40;
 }
 /* Header nav layout */
 nav {
@@ -39,6 +39,57 @@ nav {
   justify-content: space-between; /* left vs right blocks */
   align-items: center;
   padding: 10px 40px;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #eaeaea;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-social {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #121212;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    border-top: 1px solid #2a2a2a;
+  }
+
+  .nav-social.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .social a {
+    font-size: 16px;
+  }
 }
 
 /* Logo + Title */
@@ -54,7 +105,7 @@ nav {
   height: 100px; /* logo size */
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #eaeaea;
   transition: transform 0.2s ease;
 }
 
@@ -64,7 +115,7 @@ nav {
 
 .logo-container h1 {
   font-size: 40px;
-  color: #EAEAEA;
+  color: #eaeaea;
   margin: 0;
 }
 
@@ -77,7 +128,7 @@ nav {
 
 /* Nav links */
 .nav-links a {
-  color: #EAEAEA;
+  color: #eaeaea;
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
@@ -89,7 +140,7 @@ nav {
 
 /* Social */
 .social a {
-  color: #EAEAEA;
+  color: #eaeaea;
   text-decoration: none;
   font-size: 14px;
   display: flex;
@@ -102,7 +153,7 @@ nav {
 }
 
 /* Responsive */
-@media (max-width:700px){
+@media (max-width: 700px) {
   .logo-avatar {
     width: 40px;
     height: 40px;
@@ -124,11 +175,7 @@ nav {
 /* HERO */
 
 .hero {
-  background: linear-gradient(
-    135deg,
-    #121212,
-    #1F2A24
-  );
+  background: linear-gradient(135deg, #121212, #1f2a24);
   color: white;
   padding: 120px 20px;
   text-align: center;
@@ -137,7 +184,7 @@ nav {
 .button {
   display: inline-block;
   margin-top: 20px;
-  background: #6B4F3B;
+  background: #6b4f3b;
   color: white;
   padding: 12px 26px;
   text-decoration: none;
@@ -146,7 +193,7 @@ nav {
 }
 
 .button:hover {
-  background: #3A5A40;
+  background: #3a5a40;
 }
 
 /* SECTIONS */
@@ -157,7 +204,7 @@ nav {
 }
 
 .dark {
-  background: #ECE7E1;
+  background: #ece7e1;
 }
 
 /* SERVICE CARDS */
@@ -175,61 +222,65 @@ nav {
   padding: 30px;
   border-radius: 10px;
   width: 260px;
-  border: 1px solid #E3DED7;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e3ded7;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* GALLERY */
-.carousel{
-  position:relative;
-  overflow:hidden;
-  max-width:1100px;
-  margin:40px auto;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 40px auto;
 }
 
-.carousel-track{
-  display:flex;
-  gap:20px;
-  transition:transform .5s ease;
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
 }
 
-.carousel-track a{
-  flex:0 0 auto;
+.carousel-track a {
+  flex: 0 0 auto;
 }
 
-.carousel-track img{
-  width:260px;
-  height:200px;
-  object-fit:cover;
-  border-radius:10px;
-  transition:transform .25s ease;
+.carousel-track img {
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.25s ease;
 }
 
-.carousel-track img:hover{
-  transform:scale(1.05);
+.carousel-track img:hover {
+  transform: scale(1.05);
 }
 
-.carousel-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:#121212;
-  color:white;
-  border:none;
-  font-size:22px;
-  padding:10px 14px;
-  cursor:pointer;
-  border-radius:4px;
-  z-index:10;
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #121212;
+  color: white;
+  border: none;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
 }
 
-.prev{ left:0; }
-.next{ right:0; }
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
 
-@media (max-width:700px){
-  .carousel-track img{
-    width:200px;
-    height:160px;
+@media (max-width: 700px) {
+  .carousel-track img {
+    width: 200px;
+    height: 160px;
   }
 }
 
@@ -244,21 +295,22 @@ form {
 
   select {
     padding: 12px;
-    border: 1px solid #D8D3CB;
+    border: 1px solid #d8d3cb;
     border-radius: 6px;
     font-size: 16px;
     background: white;
   }
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
-  border: 1px solid #D8D3CB;
+  border: 1px solid #d8d3cb;
   border-radius: 6px;
 }
 
 button {
-  background: #3A5A40;
+  background: #3a5a40;
   color: white;
   padding: 14px;
   border: none;
@@ -268,17 +320,17 @@ button {
 }
 
 button:hover {
-  background: #1F2A24;
+  background: #1f2a24;
 }
 
 /* FOOTER */
 
 footer {
   background: #121212;
-  color: #EAEAEA;
+  color: #eaeaea;
   text-align: center;
   padding: 20px;
-  border-top: 2px solid #3A5A40;
+  border-top: 2px solid #3a5a40;
 }
 
 .footer-content {
@@ -289,7 +341,7 @@ footer {
 }
 
 .footer-social a {
-  color: #EAEAEA;
+  color: #eaeaea;
   text-decoration: none;
   font-size: 14px;
   display: inline-flex;
@@ -299,22 +351,21 @@ footer {
   transition: color 0.2s ease;
 }
 
-.legal{
-max-width:800px;
-margin:auto;
-line-height:1.7;
+.legal {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
 }
 
-.legal h3{
-margin-top:30px;
+.legal h3 {
+  margin-top: 30px;
 }
-
 
 .footer-social a:hover {
   color: #588157; /* moss accent */
 }
 
-@media (max-width:700px){
+@media (max-width: 700px) {
   .footer-social a {
     font-size: 12px;
   }
